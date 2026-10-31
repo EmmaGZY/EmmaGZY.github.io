@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artifact 1: Cat Care Scenarios — Emma Gao</title>
+  <meta name="description" content="An AI chatbot that helps first-time cat owners with cat behavior, feeding, grooming and play, refined over three prompt iterations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a href="../index.html" class="brand">Emma Gao<span>.</span></a>
+      <ul>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#value">Value</a></li>
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#artifacts">Artifacts</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="art-hero">
+    <div class="wrap">
+      <a href="../index.html#artifacts" class="back">← Back to all artifacts</a>
+      <span class="eyebrow" style="display:block">Artifact 01 · Conversational AI</span>
+      <h1>Cat Care Scenarios: An AI Guide for First-Time Cat Parents</h1>
+      <p class="lead">An AI chatbot that helps new cat moms and dads understand their cat's behavior and get practical guidance on feeding, grooming and play.</p>
+      <div class="summary-strip">
+        <div><small>Built on</small><strong>Mizou AI chatbot</strong></div>
+        <div><small>Audience</small><strong>First-time cat owners</strong></div>
+        <div><small>Iterations</small><strong>3 prompt versions</strong></div>
+        <div><small>Program</small><strong>MS in AI, IWU</strong></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap art-layout">
+    <nav class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#evidence">The bot in action</a></li>
+        <li><a href="#tools">Tools &amp; technologies</a></li>
+        <li><a href="#value">Value proposition</a></li>
+        <li><a href="#unique">Unique value</a></li>
+        <li><a href="#relevance">Relevance</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section class="block" id="introduction">
+        <h2><span class="n">01</span>Introduction</h2>
+        <p>This project started with my own experience. When I became a cat mom, I didn't really know what was best for my cat, and I made a lot of mistakes along the way. The information I found online was scattered and often contradictory, and I wished I had one place to ask simple questions and get answers that fit <em>my</em> cat.</p>
+        <p>For an AI Lab exercise in my MS in Artificial Intelligence program, I built the assistant I wish I'd had: <strong>Cat Care Scenarios</strong>, a friendly, patient guide for the everyday questions new cat owners actually have.</p>
+      </section>
+
+      <section class="block" id="description">
+        <h2><span class="n">02</span>Description</h2>
+        <p>Cat Care Scenarios is a conversational AI chatbot I built on Mizou, a platform for creating custom AI chatbots. I shaped it with my own set of instructions (a system prompt). Users explore real-life situations as a new cat mom or dad, make decisions about care and get feedback. It covers four areas:</p>
+        <ul>
+          <li><strong>Behavior:</strong> what scratching, hiding, meowing and body language mean</li>
+          <li><strong>Feeding:</strong> routines and portions that match the cat's age</li>
+          <li><strong>Grooming:</strong> brushing, nail care and other basics</li>
+          <li><strong>Play:</strong> keeping a cat active, engaged and happy</li>
+        </ul>
+        <p>Instead of handing out generic advice, the bot first gets to know the cat, then asks open-ended questions to understand the situation, and finally gives short, practical steps.</p>
+      </section>
+
+      <section class="block" id="objective">
+        <h2><span class="n">03</span>Objective</h2>
+        <p>I created this artifact to learn how to design and refine a conversational AI tool for a specific audience. My goals were to:</p>
+        <ul>
+          <li>Practice prompt engineering by turning a real user need into clear bot instructions</li>
+          <li>Learn how to test and improve a chatbot through repeated iterations</li>
+          <li>Build something genuinely useful for people in the situation I was once in</li>
+        </ul>
+        <div class="callout">The goal wasn't just a bot that knows about cats. It was a bot that feels like talking to someone who wants to understand <em>your</em> cat.</div>
+      </section>
+
+      <section class="block" id="process">
+        <h2><span class="n">04</span>Process</h2>
+        <p>I started with a basic version, tested it by role-playing as a first-time cat owner, and revised the prompt each time the conversation fell short. It took three versions to get there:</p>
+
+        <div class="timeline">
+          <div class="step">
+            <span class="v">Version 1</span>
+            <h3>Getting to know the cat</h3>
+            <div class="row"><b>Problem</b><span>The bot jumped straight into very general instructions without asking about the cat. It didn't feel like talking to a real person.</span></div>
+            <div class="row fix"><b>Change</b><span>Added instructions to open every conversation by asking about the cat's breed and age, so the advice fits that specific cat.</span></div>
+          </div>
+          <div class="step">
+            <span class="v">Version 2</span>
+            <h3>Letting owners tell their story</h3>
+            <div class="row"><b>Problem</b><span>The bot didn't ask open-ended questions, so owners couldn't really describe what was going on. It was hard to understand the situation or how serious it was.</span></div>
+            <div class="row fix"><b>Change</b><span>Updated the prompt so the bot asks open-ended follow-up questions, such as what's been happening and when it started, before giving advice.</span></div>
+          </div>
+          <div class="step">
+            <span class="v">Version 3</span>
+            <h3>Keeping it simple</h3>
+            <div class="row"><b>Problem</b><span>Once the bot knew more about the cat, its answers became long paragraphs that would overwhelm a new owner.</span></div>
+            <div class="row fix"><b>Change</b><span>Told the bot to keep answers short and simple, with a few clear steps the owner can act on right away, and more detail only on request.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="evidence">
+        <h2><span class="n">05</span>The bot in action</h2>
+        <p>The final prompt is built on three core instructions, one from each iteration:</p>
+        <div class="rules">
+          <div class="rule"><div class="k">🐾</div><h4>Know the cat first</h4><p>Start by asking the cat's breed and age.</p></div>
+          <div class="rule"><div class="k">💬</div><h4>Ask, then advise</h4><p>Use open-ended questions to understand the situation and how serious it is.</p></div>
+          <div class="rule"><div class="k">✂️</div><h4>Keep it short</h4><p>A few clear, actionable steps, with more detail only on request.</p></div>
+        </div>
+
+        <p style="margin-top:1.6rem">The live bot on Mizou. Following the Version 1 change, it opens by welcoming the new owner and asking about the cat's age and breed:</p>
+        <figure class="shot-wide">
+          <img src="../images/cat-bot-welcome.png" alt="Cat Care Scenarios chatbot on Mizou, opening by asking the cat's age and breed">
+          <figcaption>Opening message of Cat Care Scenarios on Mizou</figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="../images/cat-bot-card.png" alt="Cat Care Scenarios bot profile card by Zaiyu Gao">
+          <figcaption>The bot's profile card on Mizou</figcaption>
+        </figure>
+      </section>
+
+      <section class="block" id="tools">
+        <h2><span class="n">06</span>Tools &amp; technologies</h2>
+        <div class="chips">
+          <div class="chip"><b>Platform</b>Mizou (AI chatbot builder)</div>
+          <div class="chip"><b>Technology</b>Large language model (LLM)</div>
+          <div class="chip"><b>Method</b>Prompt engineering (system prompt)</div>
+          <div class="chip"><b>Testing</b>Role-play conversations as a new owner</div>
+          <div class="chip"><b>Portfolio</b>HTML, CSS, GitHub Pages</div>
+        </div>
+      </section>
+
+      <section class="block" id="value">
+        <h2><span class="n">07</span>Value proposition</h2>
+        <p>This artifact shows that I can take a real user problem and turn it into a working AI tool, then improve it based on how people actually use it. Each version solved a specific gap I saw in testing: personalization, conversation and readability.</p>
+        <p>It reflects how I approach data and AI work in general: start with the user, test against real situations, and keep iterating until the tool is truly helpful, not just technically correct.</p>
+      </section>
+
+      <section class="block" id="unique">
+        <h2><span class="n">08</span>Unique value</h2>
+        <p>I built this bot from the user's side of the problem. As a former first-time cat mom, I knew the questions new owners are afraid to ask and how overwhelming too much information can feel. My marketing background shaped the design too: knowing your audience, meeting them where they are, and keeping the message simple are as important in a chatbot as in a campaign.</p>
+      </section>
+
+      <section class="block" id="relevance">
+        <h2><span class="n">09</span>Relevance</h2>
+        <p>Conversational AI is quickly becoming how brands support and engage customers. The skills behind this project apply directly to marketing and customer experience work:</p>
+        <ul>
+          <li>Designing personalization: asking the right questions before recommending anything</li>
+          <li>Writing and refining prompts that control an AI's tone, scope and format</li>
+          <li>Testing an AI product against real user needs and improving it step by step</li>
+        </ul>
+        <p>The same approach could power a pet brand's customer assistant, a product-recommendation bot, or an internal help tool for a marketing team.</p>
+      </section>
+
+      <section class="block" id="references">
+        <h2><span class="n">10</span>References</h2>
+        <ul>
+          <li>Indiana Wesleyan University, MS in Artificial Intelligence: AI Lab course materials.</li>
+          <li>Mizou. AI chatbot platform. <a href="https://mizou.com" target="_blank" rel="noopener">mizou.com</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Emma Gao</span>
+      <a href="../index.html">← Back to portfolio home</a>
+    </div>
+  </footer>
+
+</body>
+</html>
